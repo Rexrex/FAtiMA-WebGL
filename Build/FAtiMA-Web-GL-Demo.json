@@ -1,0 +1,18 @@
+{
+"companyName": "INESC-ID",
+"productName": "FAtiMA Demo",
+"productVersion": "1.0",
+"dataUrl": "FAtiMA-Web-GL-Demo.data.unityweb",
+"asmCodeUrl": "FAtiMA-Web-GL-Demo.asm.code.unityweb",
+"asmMemoryUrl": "FAtiMA-Web-GL-Demo.asm.memory.unityweb",
+"asmFrameworkUrl": "FAtiMA-Web-GL-Demo.asm.framework.unityweb",
+"TOTAL_MEMORY": 536870912,
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.3.0a2"
+}
