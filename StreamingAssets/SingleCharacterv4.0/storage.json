@@ -10,6 +10,22 @@
 					"AppraisalWeight": 1,
 					"Rules": [
 						{
+							"EventName": "Event(Action-End, *, Speak([cs], [ns], Neutral, [sty]), SELF)",
+							"Conditions":
+								{
+									"Set": []
+								},
+							"AppraisalVariables":
+								{
+									"AppraisalVariables": [
+										{
+											"Name": "Desirability",
+											"Value": 2,
+											"Target": "-"
+										}]
+								}
+						}, 
+						{
 							"EventName": "Event(Action-End, *, Speak([cs], [ns], Happy, [sty]), SELF)",
 							"Conditions":
 								{
@@ -42,7 +58,7 @@
 								}
 						}, 
 						{
-							"EventName": "Event(Action-End, *, Speak(*, *, *, *), SELF)",
+							"EventName": "Event(Action-End, *, Speak([cs], [ns], Insult, [sty]), SELF)",
 							"Conditions":
 								{
 									"Set": []
@@ -52,7 +68,7 @@
 									"AppraisalVariables": [
 										{
 											"Name": "Desirability",
-											"Value": 0,
+											"Value": -10,
 											"Target": "-"
 										}]
 								}
@@ -72,24 +88,34 @@
 			"classId": 0,
 			"ActionTendencies": [
 				{
-					"Action": "Speak([cs], [ns], [mean], [sty])",
+					"Action": "Speak([cs], [ns], Neutral, -)",
 					"Target": "[t]",
 					"Layer": "-",
 					"Conditions":
 						{
-							"Set": ["Has(Floor) = SELF", "DialogueState([t]) = [cs]", "ValidDialogue([cs], [ns], [mean], [sty]) = True"]
+							"Set": ["Has(Floor) = SELF", "Mood(SELF) > -1", "Mood(SELF) < 1", "DialogueState([t]) = [cs]", "ValidDialogue([cs], [ns], Neutral, [sty]) = True"]
 						},
 					"Priority": 1
 				}, 
 				{
-					"Action": "Speak([cs], [ns], [mean], Informal)",
+					"Action": "Speak([cs], [ns], Happy, [sty])",
 					"Target": "[t]",
 					"Layer": "-",
 					"Conditions":
 						{
-							"Set": ["Has(Floor) = SELF", "DialogueState([t]) = [cs]", "SI([t]) > 25", "ValidDialogue([cs], [ns], [mean], Informal) = True"]
+							"Set": ["Has(Floor) = SELF", "Mood(SELF) >= 1", "DialogueState([t]) = [cs]", "ValidDialogue([cs], [ns], Happy, [sty]) = True"]
 						},
-					"Priority": 5
+					"Priority": 1
+				}, 
+				{
+					"Action": "Speak([cs], [ns], Sad, [sty])",
+					"Target": "[t]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["Has(Floor) = SELF", "Mood(SELF) <= -1", "DialogueState([t]) = [cs]", "ValidDialogue([cs], [ns], Sad, [sty]) = True"]
+						},
+					"Priority": 1
 				}]
 		},
 	"types": [
@@ -103,34 +129,7 @@
 	"root":
 		{
 			"classId": 0,
-			"AttributionRules": [
-				{
-					"RuleName": "Good Mood",
-					"Target": "[t]",
-					"Value": 10,
-					"Conditions":
-						{
-							"Set": ["Mood(SELF) > 0"]
-						}
-				}, 
-				{
-					"RuleName": "Close Friends",
-					"Target": "[t]",
-					"Value": 20,
-					"Conditions":
-						{
-							"Set": ["CloseFriends([t]) = True"]
-						}
-				}, 
-				{
-					"RuleName": "TalktTo",
-					"Target": "[t]",
-					"Value": 40,
-					"Conditions":
-						{
-							"Set": ["EventId(Action-End, [t], Speak(*, *, *, *), SELF) != -1"]
-						}
-				}]
+			"AttributionRules": []
 		},
 	"types": [
 		{

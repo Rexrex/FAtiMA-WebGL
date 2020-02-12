@@ -8,6 +8,14 @@
 				{
 					"CurrentState": "Start",
 					"NextState": "S1",
+					"Meaning": "-",
+					"Style": "-",
+					"Utterance": "Hi, how are you?",
+					"UtteranceId": "TTS-8658CD9054FCAF676B0B5054191D761B"
+				}, 
+				{
+					"CurrentState": "Start",
+					"NextState": "S1",
 					"Meaning": "Sad",
 					"Style": "-",
 					"Utterance": "Uhm, hey",
@@ -20,6 +28,14 @@
 					"Style": "-",
 					"Utterance": "Hello",
 					"UtteranceId": "TTS-5D41402ABC4B2A76B9719D911017C592"
+				}, 
+				{
+					"CurrentState": "S1",
+					"NextState": "S2",
+					"Meaning": "Neutral",
+					"Style": "-",
+					"Utterance": "How are you?",
+					"UtteranceId": "TTS-006A2F61E91705A8D0095D4D97AB0CE2"
 				}, 
 				{
 					"CurrentState": "Start",
@@ -70,20 +86,12 @@
 					"UtteranceId": "TTS-9106E6B93B6273446C0997374DBFFCAA"
 				}, 
 				{
-					"CurrentState": "S1",
-					"NextState": "S2",
-					"Meaning": "Neutral",
-					"Style": "2sadqwas",
-					"Utterance": "How are you?",
-					"UtteranceId": "TTS-006A2F61E91705A8D0095D4D97AB0CE2"
-				}, 
-				{
 					"CurrentState": "Start",
 					"NextState": "S1",
 					"Meaning": "-",
-					"Style": "Informal",
-					"Utterance": "What is up dudde, you my closest friend !",
-					"UtteranceId": "TTS-75847C9C118E2DCC2F75BB8BBE32C2B7"
+					"Style": "-",
+					"Utterance": "What did you realise?",
+					"UtteranceId": "TTS-CD72F371F42DAB56BE602B0824D25C5D"
 				}],
 			"Characters": [
 				{
@@ -95,9 +103,7 @@
 									"SELF":
 										{
 											"Has(Floor)": "Charlie, 1",
-											"DialogueState(Player)": "Start, 1",
-											"AM(Charlie)": "True, 1",
-											"CloseFriends(Player)": "False, 1"
+											"DialogueState(Player)": "Start, 1"
 										}
 								}
 						},
@@ -105,7 +111,7 @@
 					"VoiceName": "Male",
 					"EmotionalState":
 						{
-							"Mood": 4,
+							"Mood": 0,
 							"initialTick": 0,
 							"EmotionalPool": [],
 							"AppraisalConfiguration":
