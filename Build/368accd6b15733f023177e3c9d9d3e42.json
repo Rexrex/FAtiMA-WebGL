@@ -1,0 +1,19 @@
+{
+"companyName": "INESCID",
+"productName": "FatimaStarterKit",
+"productVersion": "0.1",
+"dataUrl": "6081c67ef7bfc31f5365b20018948f30.unityweb",
+"asmCodeUrl": "9d1a0381c6990e2c7420508704596f2d.unityweb",
+"asmMemoryUrl": "4d0e0c1f61aef4e489951e0213799b7c.unityweb",
+"asmFrameworkUrl": "ce22f29c428f00984654e50bd83eb137.unityweb",
+"asmSymbolsUrl": "1be0d10c0680c6b6c8c5f2d3bb5fd946.unityweb",
+"TOTAL_MEMORY": 587202560,
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.2.4f1"
+}
