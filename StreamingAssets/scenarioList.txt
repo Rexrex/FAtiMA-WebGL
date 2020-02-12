@@ -1,4 +1,0 @@
-\Scenarios\Introduction\IntroductionScenario.iat
-	Introduction
-\Scenarios\SpaceModules\MinSysKnwNov.iat
-	SpaceModules
