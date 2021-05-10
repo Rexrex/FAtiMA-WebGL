@@ -1,0 +1,8 @@
+\Scenarios\Introduction\IntroductionScenario.iat
+	Introduction
+\Scenarios\SpaceModules\MinSysKnwNov.iat
+	SpaceModules
+\Scenarios\EmotionalAppraisalDemo\EADemo.iat
+	EADemo
+\Scenarios\Purgatory\PurgatorySingleCharacter.iat
+	Purgatory
