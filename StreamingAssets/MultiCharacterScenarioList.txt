@@ -1,6 +1,0 @@
-\Scenarios\JobInterview\JobInterview.iat
-	JobInterview
-\Scenarios\PharmacySchool\SampleEncounter.iat
-	PharmacySchool
-\Scenarios\Interrogation\JobInterview.iat
-	Interrogation
